@@ -1,3 +1,7 @@
 import menu
 
-menu.mostrar_menu()
+print("PRINCIPAL INICIO")
+
+menu.executar_menu()
+
+print("PRINCIPAL FIM")
