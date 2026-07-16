@@ -1,3 +1,7 @@
+from modulos import tarefas
+from modulos import habitos 
+from modulos import metas
+
 def mostrar_menu():
     print("====================")
     print("       LifeOS")
@@ -15,4 +19,17 @@ def executar_menu():
     while True:
          opcao = mostrar_menu()
 
-         print(f"Você escolheu: {opcao}")
+         if opcao == "1":
+             tarefas.abrir()
+
+         elif opcao == "2":
+            habitos.abrir()
+    
+         elif opcao == "3":
+            metas.abrir()
+
+         elif opcao == "0":
+            print("\nAté logo!")
+
+         else:
+            print("\nOpção Inválida!")
