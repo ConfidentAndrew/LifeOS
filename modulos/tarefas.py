@@ -1,4 +1,6 @@
-tarefas = []
+from modulos import arquivos
+
+tarefas = arquivos.carregar_tarefas()
 
 def abrir():
     while True:    
