@@ -1,6 +1,8 @@
-from modulos import tarefas
-from modulos import habitos 
-from modulos import metas
+from modulos import (
+    habitos, 
+    tarefas,
+    metas,
+)
 
 def mostrar_menu():
     print("====================")
