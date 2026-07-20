@@ -1,5 +1,14 @@
 [
-    "Estudar Python",
-    "Revisar comandos no Git",
-    "Analizar GitHub"
+    {
+        "nome": "Estudar Python",
+        "concluida": true
+    },
+    {
+        "nome": "Revisar GitHub",
+        "concluida": true
+    },
+    {
+        "nome": "Estudar versionamento no Git",
+        "concluida": true
+    }
 ]
