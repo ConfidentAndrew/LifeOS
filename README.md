@@ -12,7 +12,7 @@ O **LifeOS** nasceu com o objetivo de ser mais do que um simples gerenciador de 
 
 Além de criar uma aplicação útil para o dia a dia, este projeto funciona como um laboratório de estudos, onde cada nova funcionalidade representa também um novo aprendizado em desenvolvimento de software.
 
-O sistema está sendo desenvolvido incrementalmente, seguindo boas práticas de organização, modularização e controle de versão.
+O sistema está sendo desenvolvido de forma incremental, seguindo boas práticas de organização, modularização, persistência de dados e controle de versão.
 
 ---
 
@@ -20,10 +20,11 @@ O sistema está sendo desenvolvido incrementalmente, seguindo boas práticas de 
 
 - ✅ Menu principal
 - ✅ Gerenciamento completo de tarefas
-- ✅ Adicionar tarefas
-- ✅ Listar tarefas
-- ✅ Remover tarefas
-- ✅ Marcar tarefas como concluídas
+  - Adicionar tarefas
+  - Listar tarefas
+  - Remover tarefas
+  - Marcar tarefas como concluídas
+  - Exibir status das tarefas (⏳ / ✅)
 - ✅ Persistência de dados em JSON
 - ✅ Estrutura modular do projeto
 - ✅ Tratamento básico de erros
@@ -40,6 +41,7 @@ Durante o desenvolvimento deste projeto foram aplicados conceitos como:
 - Estruturas condicionais e de repetição
 - Tratamento de exceções
 - Organização de projetos em Python
+- Representação de estados utilizando valores booleanos
 - Versionamento com Git e GitHub
 
 ---
@@ -114,7 +116,7 @@ python principal.py
 
 Mais do que desenvolver um sistema de produtividade, o objetivo deste projeto é documentar minha evolução como desenvolvedor, colocando em prática conceitos de programação, arquitetura de software, organização de código, versionamento com Git e desenvolvimento incremental.
 
-Cada funcionalidade é implementada, testada e versionada individualmente, permitindo acompanhar a evolução do projeto ao longo do tempo.
+Cada funcionalidade é implementada, testada, documentada e versionada individualmente, permitindo acompanhar a evolução do projeto ao longo do tempo.
 
 ---
 
@@ -122,4 +124,4 @@ Cada funcionalidade é implementada, testada e versionada individualmente, permi
 
 Desenvolvido por **Adriel** como parte da minha jornada de estudos em **Engenharia de Software**.
 
-⭐ Se você gostou do projeto, fique à vontade para acompanhar a sua evolução e deixar uma estrela no repositório.
+⭐ Se você gostou do projeto, fique à vontade para acompanhar sua evolução e deixar uma estrela no repositório.
