@@ -5,7 +5,7 @@
     },
     {
         "nome": "Revisar GitHub",
-        "concluida": true
+        "concluida": false
     },
     {
         "nome": "Estudar versionamento no Git",

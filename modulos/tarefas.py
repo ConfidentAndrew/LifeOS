@@ -28,7 +28,11 @@ def abrir():
         elif opcao == "2":
            print("\n ===== SUAS TAREFAS =====")           
            for numero, tarefa in enumerate(tarefas):
-              print(f"{numero + 1}. {tarefa['nome']}")
+             if tarefa["concluida"]:
+                status = "✅"
+             else:
+                status = "⏳"
+             print(f"{numero + 1}. {status} {tarefa['nome']}")
 
         elif opcao == "3":
              try:
