@@ -1,0 +1,14 @@
+[
+    {
+        "nome": "Revisar Francês",
+        "concluido_hoje": true
+    },
+    {
+        "nome": "Despertador as 7",
+        "concluido_hoje": false
+    },
+    {
+        "nome": "Gravar conteúdo para as redes",
+        "concluido_hoje": false
+    }
+]
