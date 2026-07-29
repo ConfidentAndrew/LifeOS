@@ -1,5 +1,6 @@
 from modulos import arquivos
 
+
 habitos = arquivos.carregar_habitos()
 
 

@@ -1,26 +1,28 @@
 import json
 
 
-def carregar_tarefas():
-    with open("dados/tarefas.json", "r", encoding="utf-8") as arquivo:
+def carregar(nome_arquivo): 
+    with open(f"dados/{nome_arquivo}.json", "r", encoding="utf-8") as arquivo:
         return json.load(arquivo)
+
+def salvar(nome_arquivo, dados):
+    with open(f"dados/{nome_arquivo}.json", "w", encoding="utf-8") as arquivo:
+        json.dump(dados, arquivo, ensure_ascii=False, indent=4)
+
+def carregar_tarefas():
+    return carregar("tarefas")
     
 def salvar_tarefas(tarefas):
-    with open("dados/tarefas.json", "w", encoding="utf-8") as arquivo:
-        json.dump(tarefas, arquivo, ensure_ascii=False, indent=4)
+    salvar("tarefas", tarefas)
 
 def carregar_habitos():
-    with open("dados/habitos.json", "r", encoding="utf-8") as arquivo:
-        return json.load(arquivo)
+    return carregar("habitos")
 
 def salvar_habitos(habitos):
-    with open("dados/habitos.json", "w", encoding="utf-8") as arquivo:
-        json.dump(habitos,arquivo, ensure_ascii=False, indent=4)
+    salvar("habitos", habitos)
 
 def carregar_metas():
-    with open("dados/metas.json", "r", encoding="utf-8") as arquivo:
-        return json.load(arquivo)
+    return carregar("metas")
 
 def salvar_metas(metas):
-    with open("dados/metas.json", "w", encoding="utf-8") as arquivo:
-        json.dump(metas, arquivo, ensure_ascii=False, indent=4)        
+    salvar("metas", metas)
