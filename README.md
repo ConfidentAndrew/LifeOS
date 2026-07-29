@@ -33,9 +33,16 @@ O sistema está sendo desenvolvido de forma incremental, seguindo boas práticas
   - Remover hábitos
   - Marcar hábitos como realizados
 
+- ✅ Gerenciamento completo de metas
+  - Adicionar metas
+  - Listar metas
+  - Remover metas
+  - Marcar metas como concluídas
+
 - ✅ Persistência de dados em JSON
 - ✅ Estrutura modular do projeto
-- ✅ Arquitetura modular
+- ✅ Arquitetura baseada em módulos
+- ✅ Refatoração do sistema de persistência
 
 ---
 
@@ -52,6 +59,9 @@ Durante o desenvolvimento deste projeto foram aplicados conceitos como:
 - Versionamento com Git e GitHub
 - Estruturas de dados com dicionários
 - Desenvolvimento incremental
+- Refatoração de código
+- Reutilização de funções (DRY)
+- Parametrização de funções
 
 ---
 
@@ -59,7 +69,9 @@ Durante o desenvolvimento deste projeto foram aplicados conceitos como:
 
 Próximas funcionalidades planejadas:
 
-- ⏳ Gerenciamento de metas
+Próximas funcionalidades planejadas:
+
+- ⏳ Tratamento de erros e validações
 - ⏳ Definição de prioridades
 - ⏳ Datas de vencimento
 - ⏳ Estatísticas de produtividade
@@ -83,7 +95,8 @@ LifeOS/
 │
 ├── dados/
 │   ├── tarefas.json
-│   └── habitos.json
+│   ├── habitos.json
+│   └── metas.json
 │
 ├── modulos/
 │   ├── arquivos.py
@@ -127,6 +140,20 @@ Mais do que desenvolver um sistema de produtividade, o objetivo deste projeto é
 Cada funcionalidade é implementada, testada, documentada e versionada individualmente, permitindo acompanhar a evolução do projeto ao longo do tempo.
 
 Este projeto continuará evoluindo conforme avanço nos estudos de Engenharia de Software, servindo como base para explorar novos conceitos e boas práticas de desenvolvimento.
+
+---
+
+## 📈 Status do projeto
+
+Atualmente o LifeOS possui três módulos totalmente funcionais:
+
+- ✅ Tarefas
+- ✅ Hábitos
+- ✅ Metas
+
+Todos utilizam persistência de dados em JSON, arquitetura modular e compartilham um sistema centralizado de leitura e escrita de arquivos, reduzindo duplicação de código e facilitando futuras expansões do projeto.
+
+---
 
 ---
 
