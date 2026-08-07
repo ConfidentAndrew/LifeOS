@@ -4,7 +4,7 @@
 >
 > Um sistema de produtividade desenvolvido em **Python**, criado para aplicar na prática conceitos de **Engenharia de Software**, arquitetura de software, organização de código e versionamento com Git.
 
-> Atualmente o projeto conta com dois módulos totalmente funcionais (Tarefas e Hábitos), ambos com persistência de dados em JSON e arquitetura modular.
+> Atualmente o projeto conta com três módulos totalmente funcionais (Tarefas, Hábitos e Metas), todos com persistência de dados em JSON e arquitetura modular.
 
 ---
 
@@ -21,27 +21,38 @@ O sistema está sendo desenvolvido de forma incremental, seguindo boas práticas
 ## ✨ Funcionalidades atuais
 
 - ✅ Menu principal
+
 - ✅ Gerenciamento completo de tarefas
+
   - Adicionar tarefas
   - Listar tarefas
   - Remover tarefas
   - Marcar tarefas como concluídas
 
 - ✅ Gerenciamento completo de hábitos
+
   - Adicionar hábitos
   - Listar hábitos
   - Remover hábitos
   - Marcar hábitos como realizados
 
 - ✅ Gerenciamento completo de metas
+
   - Adicionar metas
   - Listar metas
   - Remover metas
   - Marcar metas como concluídas
 
 - ✅ Persistência de dados em JSON
+
 - ✅ Estrutura modular do projeto
+
 - ✅ Arquitetura baseada em módulos
+
+- ✅ Validação de entradas nos módulos
+
+- ✅ Tratamento de erros durante operações com dados
+
 - ✅ Refatoração do sistema de persistência
 
 ---
@@ -54,7 +65,7 @@ Durante o desenvolvimento deste projeto foram aplicados conceitos como:
 - Manipulação de listas e dicionários
 - Persistência de dados com JSON
 - Estruturas condicionais e de repetição
-- Tratamento de exceções
+- Tratamento de exceções com try/except
 - Organização de projetos em Python
 - Versionamento com Git e GitHub
 - Estruturas de dados com dicionários
@@ -62,6 +73,8 @@ Durante o desenvolvimento deste projeto foram aplicados conceitos como:
 - Refatoração de código
 - Reutilização de funções (DRY)
 - Parametrização de funções
+- Validação de entradas do usuário
+- Tratamento de casos de borda (listas vazias e índices inválidos)
 
 ---
 
@@ -69,9 +82,6 @@ Durante o desenvolvimento deste projeto foram aplicados conceitos como:
 
 Próximas funcionalidades planejadas:
 
-Próximas funcionalidades planejadas:
-
-- ⏳ Tratamento de erros e validações
 - ⏳ Definição de prioridades
 - ⏳ Datas de vencimento
 - ⏳ Estatísticas de produtividade
@@ -145,17 +155,15 @@ Este projeto continuará evoluindo conforme avanço nos estudos de Engenharia de
 
 ## 📈 Status do projeto
 
-Atualmente o LifeOS possui três módulos totalmente funcionais:
+Atualmente o LifeOS possui três módulos funcionais:
 
 - ✅ Tarefas
 - ✅ Hábitos
 - ✅ Metas
 
-Todos utilizam persistência de dados em JSON, arquitetura modular e compartilham um sistema centralizado de leitura e escrita de arquivos, reduzindo duplicação de código e facilitando futuras expansões do projeto.
+O sistema conta com persistência de dados em JSON, arquitetura modular e validações para garantir maior segurança durante a utilização.
 
----
-
----
+Durante o desenvolvimento, o projeto passou por etapas de implementação, testes, documentação e refatoração, seguindo uma evolução incremental.
 
 ## 👨‍💻 Autor
 
