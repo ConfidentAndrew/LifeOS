@@ -1,6 +1,5 @@
 from modulos import arquivos
 
-
 habitos = arquivos.carregar_habitos()
 
 
@@ -35,19 +34,41 @@ def abrir():
                 print(f"{numero + 1}. {status} {habito['nome']}")
 
         elif opcao == "3":
+
+            if not habitos:
+                print("\nNenhum hábito cadastrado.")
+                continue
+
             numero = int(input("\nDigite o número do hábito: "))
             removido = habitos.pop(numero - 1)
             arquivos.salvar_habitos(habitos)
             print(f"\nHábito removido com sucesso: {removido['nome']}")
 
         elif opcao == "4":
-            numero = int(input("\nDigite o número do hábito: "))
-            habitos[numero - 1]["concluido_hoje"] = True
-            arquivos.salvar_habitos(habitos)
-            print("\nHábito marcado como realizado hoje")
+
+            if not habitos:
+                print("\nNenhum hábito cadastrado.")
+                continue
+
+            try:
+                numero = int(input("\nDigite o número do hábito que deseja marcar como realizado hoje: "))
+
+                if numero < 1:
+                    print("\nHábito não encontrado.")
+                    continue
+
+                habitos[numero - 1]["concluido_hoje"] = True
+                arquivos.salvar_habitos(habitos)
+                print("\nHábito marcado como realizado hoje")
+
+            except ValueError:
+                print("\nDigite um número válido.")
+
+            except IndexError:
+                print("\nHábito não encontrado.")
 
         elif opcao == "0":
             break
 
         else:
-            print("\nOpção inválida") 
+            print("\nOpção inválida")

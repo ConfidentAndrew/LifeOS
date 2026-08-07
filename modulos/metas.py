@@ -35,14 +35,41 @@ def abrir():
                 print(f"{numero + 1}. {status} {meta['nome']}")
 
         elif opcao == "3":
-            numero = int(input("\nDigite o número da meta: "))   
-            removida = metas.pop(numero - 1)
-            arquivos.salvar_metas(metas)
-            print(f"\nMeta removida com sucesso: {removida['nome']}")
 
-        elif opcao == "4":
+            if not metas:
+               print("\nNenhuma meta cadastrada.")
+               continue
+
             try:
                 numero = int(input("\nDigite o número da meta: "))
+
+                if numero < 1:
+                    print("\nMeta não encontrada.")
+                    continue
+
+                removida = metas.pop(numero - 1)
+                arquivos.salvar_metas(metas)
+                print(f"\nMeta removida com sucesso: {removida['nome']}")
+
+            except ValueError:
+                print("\nDigite um número válido.")
+
+            except IndexError:
+                print("\nMeta não encontrada.")
+
+        elif opcao == "4":
+
+            if not metas:
+                print("\nNenhuma meta cadastrada.")
+                continue
+
+            try:
+                numero = int(input("\nDigite o número da meta: "))
+
+                if numero < 1:
+                    print("\nMeta não encontrada.")
+                    continue
+
                 metas[numero - 1]["concluida"] = True
                 arquivos.salvar_metas(metas)
                 print("\nMeta marcada como concluída")
